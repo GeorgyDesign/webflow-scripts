@@ -46,7 +46,7 @@ const controls = new OrbitControls(camera, renderer.domElement);
 controls.enableDamping = true;
 controls.dampingFactor = 0.125;
 
-window.addEventListener("resize", onWindowResize);
+/* window.addEventListener("resize", onWindowResize);
 function onWindowResize() {
   camera.left = window.innerWidth / -2;
   camera.right = window.innerWidth / 2;
@@ -54,7 +54,21 @@ function onWindowResize() {
   camera.bottom = window.innerHeight / -2;
   camera.updateProjectionMatrix();
   renderer.setSize(window.innerWidth, window.innerHeight);
-}
+} */
+
+window.addEventListener("resize", () => {
+  // Update sizes
+  sizes.width = window.innerWidth;
+  sizes.height = window.innerHeight;
+
+  // Update camera
+  camera.aspect = sizes.width / sizes.height;
+  camera.updateProjectionMatrix();
+
+  // Update renderer
+  renderer.setSize(sizes.width, sizes.height);
+  renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
+});
 
 function animate(time) {
   controls.update();
