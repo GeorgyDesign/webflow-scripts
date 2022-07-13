@@ -1,2 +1,2 @@
-# webflow-scripts
+# Webflow Scripts by Georgy Alaverdyan
 Created with CodeSandbox
