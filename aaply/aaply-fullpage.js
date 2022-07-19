@@ -53,8 +53,8 @@ new fullpage("#fullpage", {
 
 		//leave animation: 1↓2
 		else if (origin.index == 1 && direction == "down") {
-			console.log("s-2-down");
-			document.querySelector(".s-2-down").click();
+			console.log("s-1-down");
+			document.querySelector(".s-1-down").click();
 
 			/*timeoutId = setTimeout(function () {
         scrollDelay = true;
@@ -66,8 +66,8 @@ new fullpage("#fullpage", {
 
 		//leave animation: 2↑1
 		else if (origin.index == 2 && direction == "up") {
-			console.log("s-3-up");
-			document.querySelector(".s-3-up").click();
+			console.log("s-2-up");
+			document.querySelector(".s-2-up").click();
 
 			timeoutId = setTimeout(function () {
 				scrollDelay = true;
