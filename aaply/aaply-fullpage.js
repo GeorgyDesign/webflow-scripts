@@ -23,8 +23,8 @@ new fullpage("#fullpage", {
 
 		//leave animation: 0↓1 👍🏻
 		if (origin.index == 0 && direction == "down") {
-			console.log("s-0-down");
-			document.querySelector(".s-0-down — 🙈 Hero • SoV ").click();
+			console.log("s-0-down — 0↓1 — 🙈 Hero • SoV ");
+			document.querySelector(".s-0-down").click();
 			/* document.querySelector('.s-1-down-test').click(); */
 
 			clearTimeout(timeoutId);
@@ -39,7 +39,7 @@ new fullpage("#fullpage", {
 
 		//leave animation: 1↑0
 		else if (origin.index == 1 && direction == "up") {
-			console.log("s-1-up");
+			console.log("s-1-up — 1↑0 —");
 			document.querySelector(".s-1-up").click();
 
 			timeoutId = setTimeout(function () {
@@ -52,7 +52,7 @@ new fullpage("#fullpage", {
 
 		//leave animation: 1↓2 👍🏻
 		else if (origin.index == 1 && direction == "down") {
-			console.log("s-1-down — 🙉 Intro (sticky) • SiV (p2)");
+			console.log("s-1-down — 1↓2 — 🙉 Intro (sticky) • SiV (p2)");
 			document.querySelector(".s-1-down").click();
 
 			/* timeoutId = setTimeout(function () {
@@ -156,8 +156,8 @@ new fullpage("#fullpage", {
 
 		//leave animation: 5↓6
 		else if (origin.index == 5 && direction == "down") {
-			console.log("s-x-down");
-			document.querySelector(".s-x-down").click();
+			console.log("s-5-down");
+			document.querySelector(".s-5-down").click();
 
 			/*timeoutId = setTimeout(function () {
         scrollDelay = true;
