@@ -68,13 +68,13 @@ new fullpage("#fullpage", {
 			console.log("s-2-up");
 			document.querySelector(".s-2-up").click();
 
-		/*	timeoutId = setTimeout(function () {
+			/*	timeoutId = setTimeout(function () {
 				scrollDelay = true;
 				fullpage_api.moveTo(destination.index + 1);
 				scrollDelay = false;
 			}, delayOneDown);
-			return scrollDelay;
-		} */
+			return scrollDelay; */
+		}
 
 		//leave animation: 2↓3
 		else if (origin.index == 2 && direction == "down") {
