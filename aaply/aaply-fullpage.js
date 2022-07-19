@@ -68,13 +68,13 @@ new fullpage("#fullpage", {
 			console.log("s-2-up");
 			document.querySelector(".s-2-up").click();
 
-			timeoutId = setTimeout(function () {
+		/*	timeoutId = setTimeout(function () {
 				scrollDelay = true;
 				fullpage_api.moveTo(destination.index + 1);
 				scrollDelay = false;
-			}, delay);
+			}, delayOneDown);
 			return scrollDelay;
-		}
+		} */
 
 		//leave animation: 2↓3
 		else if (origin.index == 2 && direction == "down") {
@@ -309,8 +309,8 @@ new fullpage("#fullpage", {
 			document.querySelector(".s-2-down").click();
 		} */
 
-		/* //load animation: 2↑1
-		if (origin.index == 2 && direction == "up") {
+		//load animation: 2↑1
+		/* if (origin.index == 2 && direction == "up") {
 			console.log("s-1-center — 2↑1 —");
 			document.querySelector(".s-1-center").click();
 		} */
