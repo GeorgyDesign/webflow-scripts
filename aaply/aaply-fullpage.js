@@ -55,12 +55,12 @@ new fullpage("#fullpage", {
 			console.log("s-1-down — 🙉 Intro (sticky) • SiV (p2)");
 			document.querySelector(".s-1-down").click();
 
-			/*timeoutId = setTimeout(function () {
+			/* timeoutId = setTimeout(function () {
         scrollDelay = true;
         fullpage_api.moveTo(destination.index + 1);
         scrollDelay = false;
       }, delay);
-      return scrollDelay;*/
+      return scrollDelay; */
 		}
 
 		//leave animation: 2↑1
@@ -298,117 +298,117 @@ new fullpage("#fullpage", {
 		}
 
 		//load animation: 1↑0
-		if(origin.index == 1 && direction =='up'){
+		if (origin.index == 1 && direction == "up") {
 			console.log("s-0-center — 1↑0 —");
-			document.querySelector('.s-0-center').click();
+			document.querySelector(".s-0-center").click();
 		}
 
 		//load animation: 1↓2
-		if(origin.index == 1 && direction =='down'){
-        console.log("s-2-center — 1↓2 —");
-        document.querySelector('.s-2-down').click();
-			}
-		
+		if (origin.index == 1 && direction == "down") {
+			console.log("s-2-center — 1↓2 —");
+			document.querySelector(".s-2-down").click();
+		}
+
 		//load animation: 2↑1
-		if(origin.index == 2 && direction =='up'){
+		if (origin.index == 2 && direction == "up") {
 			console.log("s-1-center — 2↑1 —");
-			document.querySelector('.s-1-center').click();
+			document.querySelector(".s-1-center").click();
 		}
 
 		//load animation: 2↓3
-		if(origin.index == 2 && direction =='down'){
+		if (origin.index == 2 && direction == "down") {
 			console.log("s-3-center — 2↓3 —");
-			document.querySelector('.s-3-center').click();
+			document.querySelector(".s-3-center").click();
 		}
 
 		//load animation: 3↑2
-		if(origin.index == 3 && direction =='up'){
+		if (origin.index == 3 && direction == "up") {
 			console.log("s-2-center — 3↑2 —");
-			document.querySelector('.s-2-center').click();
+			document.querySelector(".s-2-center").click();
 		}
 
 		//load animation: 3↓4
-		if(origin.index == 3 && direction =='down'){
+		if (origin.index == 3 && direction == "down") {
 			console.log("s-4-center — 3↓4 —");
-			document.querySelector('.s-4-center').click();
+			document.querySelector(".s-4-center").click();
 		}
 
 		//load animation: 4↑3
-		if(origin.index == 4 && direction =='up'){
+		if (origin.index == 4 && direction == "up") {
 			console.log("s-3-center — 4↑3 —");
-			document.querySelector('.s-3-center').click();
+			document.querySelector(".s-3-center").click();
 		}
 
 		//load animation: 4↓5
-		if(origin.index == 4 && direction =='down'){
+		if (origin.index == 4 && direction == "down") {
 			console.log("s-4-center — 4↓5 —");
-			document.querySelector('.s-4-center').click();
+			document.querySelector(".s-4-center").click();
 		}
 
 		//load animation: 5↑4
-		if(origin.index == 5 && direction =='up'){
+		if (origin.index == 5 && direction == "up") {
 			console.log("s-4-center — 5↑4 —");
-			document.querySelector('.s-4-center').click();
+			document.querySelector(".s-4-center").click();
 		}
 
 		//load animation: 5↓6
-		if(origin.index == 5 && direction =='down'){
+		if (origin.index == 5 && direction == "down") {
 			console.log("s-6-center — 5↓6 —");
-			document.querySelector('.s-5-center').click();
+			document.querySelector(".s-5-center").click();
 		}
 
 		//load animation: 6↑5
-		if(origin.index == 6 && direction =='up'){
+		if (origin.index == 6 && direction == "up") {
 			console.log("s-5-center — 6↑5 —");
-			document.querySelector('.s-5-center').click();
+			document.querySelector(".s-5-center").click();
 		}
 
 		//load animation: 6↓7
-		if(origin.index == 6 && direction =='down'){
+		if (origin.index == 6 && direction == "down") {
 			console.log("s-7-center — 6↓7 —");
-			document.querySelector('.s-6-center').click();
+			document.querySelector(".s-6-center").click();
 		}
 
 		//load animation: 7↑6
-		if(origin.index == 7 && direction =='up'){
+		if (origin.index == 7 && direction == "up") {
 			console.log("s-6-center — 7↑6 —");
-			document.querySelector('.s-6-center').click();
+			document.querySelector(".s-6-center").click();
 		}
 
 		//load animation: 7↓8
-		if(origin.index ==  && direction =='down'){
+		if (origin.index == 7 && direction == "down") {
 			console.log("s-8-center — 7↓8 —");
-			document.querySelector('.s-8-center').click();
+			document.querySelector(".s-8-center").click();
 		}
 
 		//load animation: 8↑7
-		if(origin.index == 8 && direction =='up'){
+		if (origin.index == 8 && direction == "up") {
 			console.log("s-7-center — 8↑7 —");
-			document.querySelector('.s-7-center').click();
+			document.querySelector(".s-7-center").click();
 		}
 
 		//load animation: 8↓9
-		if(origin.index == 8 && direction =='down'){
+		if (origin.index == 8 && direction == "down") {
 			console.log("s-9-center — 8↓9 —");
-			document.querySelector('.s-9-center').click();
+			document.querySelector(".s-9-center").click();
 		}
 
 		//load animation: 9↑8
-		if(origin.index == 9 && direction =='up'){
+		if (origin.index == 9 && direction == "up") {
 			console.log("s-8-center — 9↑8 —");
-			document.querySelector('.s-8-center').click();
+			document.querySelector(".s-8-center").click();
 		}
 
 		//load animation: 9↓10
-		if(origin.index == 9 && direction =='down'){
+		if (origin.index == 9 && direction == "down") {
 			console.log("s-10-center — 9↓10 —");
-			document.querySelector('.s-10-center').click();
+			document.querySelector(".s-10-center").click();
 		}
 
 		//load animation: 10↑9
-		if(origin.index == 10 && direction =='up'){
+		if (origin.index == 10 && direction == "up") {
 			console.log("s-9-center — 10↑9 —");
-			document.querySelector('.s-9-center').click();
+			document.querySelector(".s-9-center").click();
 		}
 	}
 });
