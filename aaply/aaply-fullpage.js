@@ -304,16 +304,16 @@ new fullpage("#fullpage", {
 		}
 
 		//load animation: 1↓2
-		if (origin.index == 1 && direction == "down") {
+		/* if (origin.index == 1 && direction == "down") {
 			console.log("s-2-center — 1↓2 —");
 			document.querySelector(".s-2-down").click();
-		}
+		} */
 
-		//load animation: 2↑1
+		/* //load animation: 2↑1
 		if (origin.index == 2 && direction == "up") {
 			console.log("s-1-center — 2↑1 —");
 			document.querySelector(".s-1-center").click();
-		}
+		} */
 
 		//load animation: 2↓3
 		if (origin.index == 2 && direction == "down") {
