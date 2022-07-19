@@ -377,7 +377,7 @@ new fullpage("#fullpage", {
 
 		//load animation: 7↓8
 		if (origin.index == 7 && direction == "down") {
-			console.log("s-8-center — 7↓8 —");
+			console.log("s-8-center — 7↓8");
 			document.querySelector(".s-8-center").click();
 		}
 
