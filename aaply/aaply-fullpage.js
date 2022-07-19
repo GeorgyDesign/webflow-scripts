@@ -22,10 +22,10 @@ new fullpage("#fullpage", {
 
 		var origin = this;
 
-		//после покидания раздела 1
+		//leave animation: 0↑1 — DONE
 		if (origin.index == 0 && direction == "down") {
-			console.log("s-1-down и s-1-down-test");
-			document.querySelector(".s-1-down").click();
+			console.log("s-0-down");
+			document.querySelector(".s-0-down — 🙈 Hero • SoV ").click();
 			/* document.querySelector('.s-1-down-test').click(); */
 
 			clearTimeout(timeoutId);
@@ -38,10 +38,10 @@ new fullpage("#fullpage", {
 			return scrollDelay;
 		}
 
-		// после покидания раздела 2
+		//leave animation: 1↑0
 		else if (origin.index == 1 && direction == "up") {
-			console.log("s-2-up");
-			document.querySelector(".s-2-up").click();
+			console.log("s-1-up");
+			document.querySelector(".s-1-up").click();
 
 			timeoutId = setTimeout(function () {
 				scrollDelay = true;
@@ -51,7 +51,7 @@ new fullpage("#fullpage", {
 			return scrollDelay;
 		}
 
-		// после покидания раздела 2
+		//leave animation: 1↓2
 		else if (origin.index == 1 && direction == "down") {
 			console.log("s-2-down");
 			document.querySelector(".s-2-down").click();
@@ -64,7 +64,7 @@ new fullpage("#fullpage", {
       return scrollDelay;*/
 		}
 
-		// после покидания раздела 3
+		//leave animation: 2↑1
 		else if (origin.index == 2 && direction == "up") {
 			console.log("s-3-up");
 			document.querySelector(".s-3-up").click();
@@ -83,7 +83,7 @@ new fullpage("#fullpage", {
 
 		var origin = this;
 
-		//открытие секции 2 с 1
+		//открытие секции 1 с 0
 		if (origin.index == 0 && direction == "down") {
 			console.log("центр s-2-center");
 			document.querySelector(".s-2-center").click();
