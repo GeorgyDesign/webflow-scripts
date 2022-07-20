@@ -1,3 +1,4 @@
+const delayExtra = 3000; // delay between sections
 const delayLong = 1700; // delay between sections
 const delayShort = 1000; // delay between sections
 
@@ -77,28 +78,28 @@ new fullpage("#fullpage", {
 
 		//leave animation: 3↑2
 		else if (origin.index == 3 && direction == "up") {
-			console.log("s-3-up");
+			console.log("s-3-up — 3↑2 — 🙈 Transition • SoV");
 			document.querySelector(".s-3-up").click();
 
-			/* timeoutId = setTimeout(function () {
+			timeoutId = setTimeout(function () {
 				scrollDelay = true;
 				fullpage_api.moveTo(destination.index + 1);
 				scrollDelay = false;
-			}, delay);
-			return scrollDelay; */
+			}, delayShort);
+			return scrollDelay;
 		}
 
 		//leave animation: 3↓4
 		else if (origin.index == 3 && direction == "down") {
-			console.log("s-3-down");
+			console.log("s-3-down — 3↓4 — 🙈 Transition • Lottie SoV");
 			document.querySelector(".s-3-down").click();
 
-			/*timeoutId = setTimeout(function () {
-        scrollDelay = true;
-        fullpage_api.moveTo(destination.index + 1);
-        scrollDelay = false;
-      }, delay);
-      return scrollDelay;*/
+			timeoutId = setTimeout(function () {
+				scrollDelay = true;
+				fullpage_api.moveTo(destination.index + 1);
+				scrollDelay = false;
+			}, delayExtra);
+			return scrollDelay;
 		}
 
 		//leave animation: 4↑3
@@ -291,8 +292,8 @@ new fullpage("#fullpage", {
 
 		//load animation: 2↓3
 		if (origin.index == 2 && direction == "down") {
-			console.log("s-3-center — 2↓3 —");
-			document.querySelector(".s-3-center").click();
+			console.log("s-3-center-up — 2↓3 — 🙈 Transition • SiV");
+			document.querySelector(".s-3-center-up").click();
 		}
 
 		//load animation: 3↑2 👍🏻
@@ -309,8 +310,8 @@ new fullpage("#fullpage", {
 
 		//load animation: 4↑3
 		if (origin.index == 4 && direction == "up") {
-			console.log("s-3-center — 4↑3 —");
-			document.querySelector(".s-3-center").click();
+			console.log("s-3-center-down — 4↑3 — 🙈 Transition • Lottie SiV");
+			document.querySelector(".s-3-center-down").click();
 		}
 
 		//load animation: 4↓5
