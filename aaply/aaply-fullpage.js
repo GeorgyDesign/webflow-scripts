@@ -1,5 +1,5 @@
-const delayOneDown = 2400; // delay between sections
-const delayTwoUp = 1500; // delay between sections
+const delayLong = 1700; // delay between sections
+const delayShort = 1000; // delay between sections
 
 let scrollDelay = false; // initial state, i.e., no scroll delay
 
@@ -33,60 +33,46 @@ new fullpage("#fullpage", {
 				scrollDelay = true;
 				fullpage_api.moveTo(destination.index + 1);
 				scrollDelay = false;
-			}, delayOneDown);
+			}, delayLong);
 			return scrollDelay;
 		}
 
-		//leave animation: 1↑0
+		//leave animation: 1↑0 👍🏻
 		else if (origin.index == 1 && direction == "up") {
-			console.log("s-1-up — 1↑0 —");
+			console.log("s-1-up — 1↑0 — 🙉 Intro (sticky) • SoV (p1/2)");
 			document.querySelector(".s-1-up").click();
 
 			timeoutId = setTimeout(function () {
 				scrollDelay = true;
 				fullpage_api.moveTo(destination.index + 1);
 				scrollDelay = false;
-			}, delayTwoUp);
+			}, delayShort);
 			return scrollDelay;
 		}
 
 		//leave animation: 1↓2 👍🏻
 		else if (origin.index == 1 && direction == "down") {
-			console.log("s-1-down — 1↓2 — 🙉 Intro (sticky) • SiV (p2)");
+			console.log("s-1-down — 1↓2 — 🙉 Intro (sticky) • Switch (p1→2)");
 			document.querySelector(".s-1-down").click();
-
-			/* timeoutId = setTimeout(function () {
-        scrollDelay = true;
-        fullpage_api.moveTo(destination.index + 1);
-        scrollDelay = false;
-      }, delay);
-      return scrollDelay; */
 		}
 
-		//leave animation: 2↑1
+		//leave animation: 2↑1 👍🏻
 		else if (origin.index == 2 && direction == "up") {
-			console.log("s-2-up");
+			console.log("s-2-up — 2↑1 — 🙉 Intro (sticky) • Switch (p2→1)");
 			document.querySelector(".s-2-up").click();
-
-			/*	timeoutId = setTimeout(function () {
-				scrollDelay = true;
-				fullpage_api.moveTo(destination.index + 1);
-				scrollDelay = false;
-			}, delayOneDown);
-			return scrollDelay; */
 		}
 
 		//leave animation: 2↓3
 		else if (origin.index == 2 && direction == "down") {
-			console.log("s-2-down");
+			console.log("s-2-down — 2↓3 — 🙉 Intro (sticky) • SoV (p1/2)");
 			document.querySelector(".s-2-down").click();
 
-			/*timeoutId = setTimeout(function () {
-        scrollDelay = true;
-        fullpage_api.moveTo(destination.index + 1);
-        scrollDelay = false;
-      }, delay);
-      return scrollDelay;*/
+			timeoutId = setTimeout(function () {
+				scrollDelay = true;
+				fullpage_api.moveTo(destination.index + 1);
+				scrollDelay = false;
+			}, delayShort);
+			return scrollDelay;
 		}
 
 		//leave animation: 3↑2
@@ -291,29 +277,17 @@ new fullpage("#fullpage", {
 
 		var origin = this;
 
-		//load animation: 0↓1
+		//load animation: 0↓1 👍🏻
 		if (origin.index == 0 && direction == "down") {
-			console.log("s-1-center — 0↓1 —");
+			console.log("s-1-center — 0↓1 — 🙉 Intro (sticky) • SiV (p1)");
 			document.querySelector(".s-1-center").click();
 		}
 
-		//load animation: 1↑0
+		//load animation: 1↑0 👍🏻
 		if (origin.index == 1 && direction == "up") {
-			console.log("s-0-center — 1↑0 —");
+			console.log("s-0-center — 1↑0 — 🙈 Hero • SiV");
 			document.querySelector(".s-0-center").click();
 		}
-
-		//load animation: 1↓2
-		/* if (origin.index == 1 && direction == "down") {
-			console.log("s-2-center — 1↓2 —");
-			document.querySelector(".s-2-down").click();
-		} */
-
-		//load animation: 2↑1
-		/* if (origin.index == 2 && direction == "up") {
-			console.log("s-1-center — 2↑1 —");
-			document.querySelector(".s-1-center").click();
-		} */
 
 		//load animation: 2↓3
 		if (origin.index == 2 && direction == "down") {
@@ -321,9 +295,9 @@ new fullpage("#fullpage", {
 			document.querySelector(".s-3-center").click();
 		}
 
-		//load animation: 3↑2
+		//load animation: 3↑2 👍🏻
 		if (origin.index == 3 && direction == "up") {
-			console.log("s-2-center — 3↑2 —");
+			console.log("s-2-center — 3↑2 — 🙉 Intro (sticky) • SiV (p2)");
 			document.querySelector(".s-2-center").click();
 		}
 
