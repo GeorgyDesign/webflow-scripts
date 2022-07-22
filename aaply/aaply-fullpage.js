@@ -1,5 +1,6 @@
 const delayExtra = 3000; // delay between sections
 const delayLong = 1700; // delay between sections
+const delayLonger = 2000; // delay between sections
 const delayShort = 1000; // delay between sections
 
 let scrollDelay = false; // initial state, i.e., no scroll delay
@@ -104,15 +105,15 @@ new fullpage("#fullpage", {
 
 		//leave animation: 4↑3
 		else if (origin.index == 4 && direction == "up") {
-			console.log("s-4-up");
+			console.log("s-4-up — 4↑3 — 🎦 Lottie • Map (p1) SoV");
 			document.querySelector(".s-4-up").click();
 
-			/* timeoutId = setTimeout(function () {
+			timeoutId = setTimeout(function () {
 				scrollDelay = true;
 				fullpage_api.moveTo(destination.index + 1);
 				scrollDelay = false;
-			}, delay);
-			return scrollDelay; */
+			}, delayShort);
+			return scrollDelay;
 		}
 
 		//leave animation: 4↓5
@@ -304,8 +305,8 @@ new fullpage("#fullpage", {
 
 		//load animation: 3↓4
 		if (origin.index == 3 && direction == "down") {
-			console.log("s-4-center — 3↓4 —");
-			document.querySelector(".s-4-center").click();
+			console.log("s-4-center-up — 3↓4 — 🎦 Lottie • Map (p1) SiV");
+			document.querySelector(".s-4-center-up").click();
 		}
 
 		//load animation: 4↑3
@@ -316,14 +317,14 @@ new fullpage("#fullpage", {
 
 		//load animation: 4↓5
 		if (origin.index == 4 && direction == "down") {
-			console.log("s-4-center — 4↓5 —");
-			document.querySelector(".s-4-center").click();
+			console.log("s-5-center — 4↓5 —");
+			document.querySelector(".s-5-center").click();
 		}
 
 		//load animation: 5↑4
 		if (origin.index == 5 && direction == "up") {
-			console.log("s-4-center — 5↑4 —");
-			document.querySelector(".s-4-center").click();
+			console.log("s-4-center-down — 5↑4 —");
+			document.querySelector(".s-4-center-down").click();
 		}
 
 		//load animation: 5↓6
