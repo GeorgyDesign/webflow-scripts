@@ -1,6 +1,6 @@
 const delayExtra = 3000; // delay between sections
-const delayLong = 1700; // delay between sections
 const delayLonger = 2000; // delay between sections
+const delayLong = 1700; // delay between sections
 const delayShort = 1000; // delay between sections
 
 let scrollDelay = false; // initial state, i.e., no scroll delay
@@ -157,28 +157,28 @@ new fullpage("#fullpage", {
 
 		//leave animation: 6↑5
 		else if (origin.index == 6 && direction == "up") {
-			console.log("s-6-up");
+			console.log("s-6-up — 6↑5 — ⚒️ Editor • SoV");
 			document.querySelector(".s-6-up").click();
 
-			/* timeoutId = setTimeout(function () {
+			timeoutId = setTimeout(function () {
 				scrollDelay = true;
 				fullpage_api.moveTo(destination.index + 1);
 				scrollDelay = false;
-			}, delay);
-			return scrollDelay; */
+			}, 1000);
+			return scrollDelay;
 		}
 
 		//leave animation: 6↓7
 		else if (origin.index == 6 && direction == "down") {
-			console.log("s-6-down");
+			console.log("s-6-down — 6↓7 — ⚒️ Editor • SoV");
 			document.querySelector(".s-6-down").click();
 
-			/*timeoutId = setTimeout(function () {
-        scrollDelay = true;
-        fullpage_api.moveTo(destination.index + 1);
-        scrollDelay = false;
-      }, delay);
-      return scrollDelay;*/
+			timeoutId = setTimeout(function () {
+				scrollDelay = true;
+				fullpage_api.moveTo(destination.index + 1);
+				scrollDelay = false;
+			}, delayShort);
+			return scrollDelay;
 		}
 
 		//leave animation: 7↑6
@@ -261,8 +261,60 @@ new fullpage("#fullpage", {
 
 		//leave animation: 10↑9
 		else if (origin.index == 10 && direction == "up") {
-			console.log("s-10-up");
+			console.log("s-10-up — 10↑9 — ⚒️ Tools • SoV");
 			document.querySelector(".s-10-up").click();
+
+			timeoutId = setTimeout(function () {
+				scrollDelay = true;
+				fullpage_api.moveTo(destination.index + 1);
+				scrollDelay = false;
+			}, delayShort);
+			return scrollDelay;
+		}
+
+		//leave animation: 10↓11
+		else if (origin.index == 10 && direction == "down") {
+			console.log("s-10-down — 10↓11 — ⚒️ Tools • SoV");
+			document.querySelector(".s-10-down").click();
+
+			timeoutId = setTimeout(function () {
+				scrollDelay = true;
+				fullpage_api.moveTo(destination.index + 1);
+				scrollDelay = false;
+			}, delayShort);
+			return scrollDelay;
+		}
+
+		//leave animation: 11↑10
+		else if (origin.index == 11 && direction == "up") {
+			console.log("s-11-up — 11↑10 —");
+			document.querySelector(".s-11-up").click();
+
+			/* timeoutId = setTimeout(function () {
+				scrollDelay = true;
+				fullpage_api.moveTo(destination.index + 1);
+				scrollDelay = false;
+			}, delay);
+			return scrollDelay; */
+		}
+
+		//leave animation: 11↓12
+		else if (origin.index == 11 && direction == "down") {
+			console.log("s-11-down — 11↓12 —");
+			document.querySelector(".s-11-down").click();
+
+			/* timeoutId = setTimeout(function () {
+				scrollDelay = true;
+				fullpage_api.moveTo(destination.index + 1);
+				scrollDelay = false;
+			}, delay);
+			return scrollDelay; */
+		}
+
+		//leave animation: 12↑11
+		else if (origin.index == 12 && direction == "up") {
+			console.log("s-12-up — 12↑11 —");
+			document.querySelector(".s-12-up").click();
 
 			/* timeoutId = setTimeout(function () {
 				scrollDelay = true;
@@ -317,7 +369,7 @@ new fullpage("#fullpage", {
 
 		//load animation: 4↓5
 		if (origin.index == 4 && direction == "down") {
-			console.log("s-5-center — 4↓5 —");
+			console.log("s-5-center — 4↓5 — 🎦 Lottie • Map (p2) SiV");
 			document.querySelector(".s-5-center").click();
 		}
 
@@ -329,62 +381,86 @@ new fullpage("#fullpage", {
 
 		//load animation: 5↓6
 		if (origin.index == 5 && direction == "down") {
-			console.log("s-6-center — 5↓6 —");
-			document.querySelector(".s-5-center").click();
+			console.log("s-6-center — 5↓6 — ⚒️ Editor • SiV");
+			document.querySelector(".s-6-center").click();
 		}
 
 		//load animation: 6↑5
 		if (origin.index == 6 && direction == "up") {
-			console.log("s-5-center — 6↑5 —");
+			console.log("s-5-center — 6↑5 — 🎦 Lottie • Map (p2) SiV");
 			document.querySelector(".s-5-center").click();
 		}
 
 		//load animation: 6↓7
 		if (origin.index == 6 && direction == "down") {
-			console.log("s-7-center — 6↓7 —");
-			document.querySelector(".s-6-center").click();
+			console.log("s-7-center — 6↓7 — 🎦 Lottie • Map (p3)");
+			document.querySelector(".s-7-center").click();
 		}
 
 		//load animation: 7↑6
 		if (origin.index == 7 && direction == "up") {
-			console.log("s-6-center — 7↑6 —");
+			console.log("s-6-center — 7↑6 — ⚒️ Editor • SiV");
 			document.querySelector(".s-6-center").click();
 		}
 
 		//load animation: 7↓8
 		if (origin.index == 7 && direction == "down") {
-			console.log("s-8-center — 7↓8");
+			console.log("s-8-center — 7↓8 — 🎦 Lottie • Map (p4)");
 			document.querySelector(".s-8-center").click();
 		}
 
 		//load animation: 8↑7
 		if (origin.index == 8 && direction == "up") {
-			console.log("s-7-center — 8↑7 —");
+			console.log("s-7-center — 8↑7 — 🎦 Lottie • Map (p3)");
 			document.querySelector(".s-7-center").click();
 		}
 
 		//load animation: 8↓9
 		if (origin.index == 8 && direction == "down") {
-			console.log("s-9-center — 8↓9 —");
+			console.log("s-9-center — 8↓9 — 🎦 Lottie • Map (p5)");
 			document.querySelector(".s-9-center").click();
 		}
 
 		//load animation: 9↑8
 		if (origin.index == 9 && direction == "up") {
-			console.log("s-8-center — 9↑8 —");
+			console.log("s-8-center — 9↑8 — 🎦 Lottie • Map (p4)");
 			document.querySelector(".s-8-center").click();
 		}
 
 		//load animation: 9↓10
 		if (origin.index == 9 && direction == "down") {
-			console.log("s-10-center — 9↓10 —");
+			console.log("s-10-center — 9↓10 — ⚒️ Tools • SiV");
 			document.querySelector(".s-10-center").click();
 		}
 
 		//load animation: 10↑9
 		if (origin.index == 10 && direction == "up") {
-			console.log("s-9-center — 10↑9 —");
+			console.log("s-9-center — 10↑9 — 🎦 Lottie • Map (p5)");
 			document.querySelector(".s-9-center").click();
+		}
+
+		//load animation: 10↓11
+		if (origin.index == 10 && direction == "down") {
+			console.log("s-11-center — 10↓11 —");
+			document.querySelector(".s-11-center").click();
+		}
+
+		//load animation: 11↑10
+		if (origin.index == 11 && direction == "up") {
+			console.log("s-10-center — 11↑10 —");
+			document.querySelector(".s-10-center").click();
+		}
+
+		//load animation: 11↓12
+		if (origin.index == 11 && direction == "down") {
+			console.log("s-12-center — 11↓12 —");
+			document.querySelector(".s-12-center").click();
+		}
+
+		//load animation: 12↑11
+		if (origin.index == 12 && direction == "up") {
+			console.log("s-11-center — 12↑11 —");
+			document.querySelector(".s-11-center").click();
 		}
 	}
 });
