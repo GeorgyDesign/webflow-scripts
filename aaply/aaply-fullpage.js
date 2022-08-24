@@ -108,13 +108,13 @@ new fullpage("#fullpage", {
 			console.log("s-4-up — 4↑3 — 🎦 Lottie • Map (p1) SoV");
 			document.querySelector(".s-4-up").click();
 
-			timeoutId = setTimeout(function () {
+			/* timeoutId = setTimeout(function () {
 				scrollDelay = true;
 				fullpage_api.moveTo(destination.index + 1);
 				scrollDelay = false;
 			}, delayShort);
 			return scrollDelay;
-		}
+		} */
 
 		//leave animation: 4↓5
 		else if (origin.index == 4 && direction == "down") {
