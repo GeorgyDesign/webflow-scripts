@@ -177,7 +177,7 @@ new fullpage("#fullpage", {
 				scrollDelay = true;
 				fullpage_api.moveTo(destination.index + 1);
 				scrollDelay = false;
-			}, delayShort);
+			}, 1000);
 			return scrollDelay;
 		}
 
@@ -268,7 +268,7 @@ new fullpage("#fullpage", {
 				scrollDelay = true;
 				fullpage_api.moveTo(destination.index + 1);
 				scrollDelay = false;
-			}, delayShort);
+			}, 1000);
 			return scrollDelay;
 		}
 
@@ -281,7 +281,7 @@ new fullpage("#fullpage", {
 				scrollDelay = true;
 				fullpage_api.moveTo(destination.index + 1);
 				scrollDelay = false;
-			}, delayShort);
+			}, 1000);
 			return scrollDelay;
 		}
 
@@ -290,12 +290,12 @@ new fullpage("#fullpage", {
 			console.log("s-11-up — 11↑10 —");
 			document.querySelector(".s-11-up").click();
 
-			/* timeoutId = setTimeout(function () {
+			timeoutId = setTimeout(function () {
 				scrollDelay = true;
 				fullpage_api.moveTo(destination.index + 1);
 				scrollDelay = false;
-			}, delay);
-			return scrollDelay; */
+			}, 900);
+			return scrollDelay;
 		}
 
 		//leave animation: 11↓12
@@ -303,12 +303,12 @@ new fullpage("#fullpage", {
 			console.log("s-11-down — 11↓12 —");
 			document.querySelector(".s-11-down").click();
 
-			/* timeoutId = setTimeout(function () {
+			timeoutId = setTimeout(function () {
 				scrollDelay = true;
 				fullpage_api.moveTo(destination.index + 1);
 				scrollDelay = false;
-			}, delay);
-			return scrollDelay; */
+			}, 900);
+			return scrollDelay;
 		}
 
 		//leave animation: 12↑11
@@ -316,12 +316,12 @@ new fullpage("#fullpage", {
 			console.log("s-12-up — 12↑11 —");
 			document.querySelector(".s-12-up").click();
 
-			/* timeoutId = setTimeout(function () {
+			timeoutId = setTimeout(function () {
 				scrollDelay = true;
 				fullpage_api.moveTo(destination.index + 1);
 				scrollDelay = false;
-			}, delay);
-			return scrollDelay; */
+			}, 1600);
+			return scrollDelay;
 		}
 	},
 
@@ -367,18 +367,6 @@ new fullpage("#fullpage", {
 			document.querySelector(".s-3-center-down").click();
 		}
 
-		//load animation: 4↓5
-		if (origin.index == 4 && direction == "down") {
-			console.log("s-5-center — 4↓5 — 🎦 Lottie • Map (p2) SiV");
-			document.querySelector(".s-5-center").click();
-		}
-
-		//load animation: 5↑4
-		if (origin.index == 5 && direction == "up") {
-			console.log("s-4-center-down — 5↑4 —");
-			document.querySelector(".s-4-center-down").click();
-		}
-
 		//load animation: 5↓6
 		if (origin.index == 5 && direction == "down") {
 			console.log("s-6-center — 5↓6 — ⚒️ Editor • SiV");
@@ -387,8 +375,8 @@ new fullpage("#fullpage", {
 
 		//load animation: 6↑5
 		if (origin.index == 6 && direction == "up") {
-			console.log("s-5-center — 6↑5 — 🎦 Lottie • Map (p2) SiV");
-			document.querySelector(".s-5-center").click();
+			console.log("s-5-center-down — 6↑5 — 🎦 Lottie • Map (p2) SiV");
+			document.querySelector(".s-5-center-down").click();
 		}
 
 		//load animation: 6↓7
@@ -403,12 +391,6 @@ new fullpage("#fullpage", {
 			document.querySelector(".s-6-center").click();
 		}
 
-		//load animation: 7↓8
-		if (origin.index == 7 && direction == "down") {
-			console.log("s-8-center — 7↓8 — 🎦 Lottie • Map (p4)");
-			document.querySelector(".s-8-center").click();
-		}
-
 		//load animation: 8↑7
 		if (origin.index == 8 && direction == "up") {
 			console.log("s-7-center — 8↑7 — 🎦 Lottie • Map (p3)");
@@ -419,12 +401,6 @@ new fullpage("#fullpage", {
 		if (origin.index == 8 && direction == "down") {
 			console.log("s-9-center — 8↓9 — 🎦 Lottie • Map (p5)");
 			document.querySelector(".s-9-center").click();
-		}
-
-		//load animation: 9↑8
-		if (origin.index == 9 && direction == "up") {
-			console.log("s-8-center — 9↑8 — 🎦 Lottie • Map (p4)");
-			document.querySelector(".s-8-center").click();
 		}
 
 		//load animation: 9↓10
