@@ -381,8 +381,8 @@ new fullpage("#fullpage", {
 
 		//load animation: 6↓7
 		if (origin.index == 6 && direction == "down") {
-			console.log("s-7-center — 6↓7 — 🎦 Lottie • Map (p3)");
-			document.querySelector(".s-7-center").click();
+			console.log("s-7-center-up — 6↓7 — 🎦 Lottie • Map (p3) SiV");
+			document.querySelector(".s-7-center-up").click();
 		}
 
 		//load animation: 7↑6
