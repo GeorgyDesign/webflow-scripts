@@ -391,12 +391,6 @@ new fullpage("#fullpage", {
 			document.querySelector(".s-6-center").click();
 		}
 
-		//load animation: 8↑7
-		if (origin.index == 8 && direction == "up") {
-			console.log("s-7-center — 8↑7 — 🎦 Lottie • Map (p3)");
-			document.querySelector(".s-7-center").click();
-		}
-
 		//load animation: 8↓9
 		if (origin.index == 8 && direction == "down") {
 			console.log("s-9-center — 8↓9 — 🎦 Lottie • Map (p5)");
