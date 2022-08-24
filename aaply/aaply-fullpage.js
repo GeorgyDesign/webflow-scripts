@@ -35,7 +35,7 @@ new fullpage("#fullpage", {
 				scrollDelay = true;
 				fullpage_api.moveTo(destination.index + 1);
 				scrollDelay = false;
-			}, delayLong);
+			}, 1700);
 			return scrollDelay;
 		}
 
