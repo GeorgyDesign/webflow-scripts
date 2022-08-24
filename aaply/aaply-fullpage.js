@@ -113,8 +113,8 @@ new fullpage("#fullpage", {
 				fullpage_api.moveTo(destination.index + 1);
 				scrollDelay = false;
 			}, delayShort);
-			return scrollDelay;
-		} */
+			return scrollDelay; */
+		}
 
 		//leave animation: 4↓5
 		else if (origin.index == 4 && direction == "down") {
