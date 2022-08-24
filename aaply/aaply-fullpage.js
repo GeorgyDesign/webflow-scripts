@@ -320,7 +320,7 @@ new fullpage("#fullpage", {
 				scrollDelay = true;
 				fullpage_api.moveTo(destination.index + 1);
 				scrollDelay = false;
-			}, 1600);
+			}, 1800);
 			return scrollDelay;
 		}
 	},
