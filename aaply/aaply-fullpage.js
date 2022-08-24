@@ -147,12 +147,12 @@ new fullpage("#fullpage", {
 			console.log("s-5-down");
 			document.querySelector(".s-5-down").click();
 
-			/*timeoutId = setTimeout(function () {
-        scrollDelay = true;
-        fullpage_api.moveTo(destination.index + 1);
-        scrollDelay = false;
-      }, delay);
-      return scrollDelay;*/
+			timeoutId = setTimeout(function () {
+				scrollDelay = true;
+				fullpage_api.moveTo(destination.index + 1);
+				scrollDelay = false;
+			}, 1000);
+			return scrollDelay;
 		}
 
 		//leave animation: 6↑5
@@ -186,12 +186,12 @@ new fullpage("#fullpage", {
 			console.log("s-7-up");
 			document.querySelector(".s-7-up").click();
 
-			/* timeoutId = setTimeout(function () {
+			timeoutId = setTimeout(function () {
 				scrollDelay = true;
 				fullpage_api.moveTo(destination.index + 1);
 				scrollDelay = false;
-			}, delay);
-			return scrollDelay; */
+			}, 1000);
+			return scrollDelay;
 		}
 
 		//leave animation: 7↓8
@@ -251,12 +251,12 @@ new fullpage("#fullpage", {
 			console.log("s-9-down");
 			document.querySelector(".s-9-down").click();
 
-			/*timeoutId = setTimeout(function () {
-        scrollDelay = true;
-        fullpage_api.moveTo(destination.index + 1);
-        scrollDelay = false;
-      }, delay);
-      return scrollDelay;*/
+			timeoutId = setTimeout(function () {
+				scrollDelay = true;
+				fullpage_api.moveTo(destination.index + 1);
+				scrollDelay = false;
+			}, 1000);
+			return scrollDelay;
 		}
 
 		//leave animation: 10↑9
