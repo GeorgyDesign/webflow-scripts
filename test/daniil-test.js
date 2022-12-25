@@ -18,6 +18,6 @@ spline
 
 		window.addEventListener("scroll", () => {
 			const { x, y } = getScrollPosition();
-			spline.emitEvent("scroll", "ScrollEvent");
+			spline.emitEvent("scroll", "c6e3d9a1-c95c-466b-997c-41ade7341f27");
 		});
 	});
